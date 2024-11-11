@@ -1,5 +1,5 @@
 {
-  "name": "node-express",
+  "name": "express",
   "version": "1.0.0",
   "description": "node js projects",
   "main": "app.js",
@@ -16,5 +16,6 @@
     "mongodb": "4.1",
     "mongoose": "^8.8.0",
     "nodemon": "^3.1.7"
-  }
+  },
+  "keywords": []
 }
