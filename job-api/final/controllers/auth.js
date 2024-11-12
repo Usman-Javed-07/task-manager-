@@ -1,5 +1,11 @@
+
+const User = require('../models/user')
+const {StatusCodes} = require('http-status-codes')
 const register = async (req , res) => {
-    res.send('register user')
+    const user = await User.create({...req.body})
+    res.status(StatusCodes.CREATED).json({user})
+    // res.json(req.body)
+    // res.send('register user')
 }
 
 const login = async (req , res) => {
@@ -10,3 +16,5 @@ module.exports = {
     register , 
     login,
 }
+
+
